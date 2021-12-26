@@ -1,0 +1,6 @@
+Validation du formulaire
+
+Le formulaire (élément) est envoyé/submit (event)
+récupération et vérification (action) valeurs input (élément)
+Si valeurs conformes (élément) affichage message succès (action)
+si valeurs non conformes (élément) affichage message erreur (action)

@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Formulaire</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Formulaire</h1>
-        <form id="formulaire">
-            <div class="form-item">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" placeholder="Votre prénom">
-            </div>
+        <div id="titre">
+      <h1>Formulaire</h1>
+    </div>
+      <form id="formulaire">
+        <div class="form-item">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" placeholder="Votre prénom" />
+          <div class="error invisible">
+            Ce champ doit contenir entre 2 et 15 carcatères
+          </div>
+        </div>
 
-            <div class="form-item">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" placeholder="Votre nom">
-            </div>
-            
-            <div class="form-item">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Votre email">
-            </div>
-            
-            <div class="form-item">
-                <label for="message">Message</label>
-                <textarea type="text" id="message" placeholder="Votre message">Votre message</textarea>
-            </div>
+        <div class="form-item">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" placeholder="Votre nom" />
+          <div class="error invisible">
+            Ce champ doit contenir entre 3 et 15 carcatères
+          </div>
+        </div>
 
-            <button id="btn" type="submit">Envoyer</button>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Votre email" />
+        </div>
 
-        </form>
+        <div class="form-item">
+          <label for="message">Message</label>
+          <textarea type="text" id="message" placeholder="Votre message">
+Votre message</textarea
+          >
+          <div class="error invisible">
+            Ce champ doit contenir entre 10 et 100 carcatères
+          </div>
+        </div>
+
+        <button id="btn" type="submit">Envoyer</button>
+      </form>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
